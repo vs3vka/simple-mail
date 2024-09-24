@@ -20,7 +20,7 @@ set(CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR}/cmake/modules)
 # to always look for includes there:
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-option(BUILD_SHARED_LIBS "Build in shared lib mode" ON)
+option(BUILD_SHARED_LIBS "Build in shared lib mode" OFF)
 
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -45,7 +45,7 @@ if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
     "/usr" CACHE PATH "simplemail default install prefix" FORCE)
 endif()
 
-option(BUILD_DEMOS "Build the demos" ON)
+option(BUILD_DEMOS "Build the demos" OFF)
 
 #
 # Custom C flags

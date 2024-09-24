@@ -73,7 +73,7 @@ target_compile_definitions(SimpleMail${PROJECT_VERSION_MAJOR}Qt${QT_VERSION_MAJO
 
 if (NOT BUILD_SHARED_LIBS)
     target_compile_definitions(SimpleMail${PROJECT_VERSION_MAJOR}Qt${QT_VERSION_MAJOR}
-      PRIVATE
+      PUBLIC
         SIMPLE_MAIL_QT_STATIC
     )
 endif ()
